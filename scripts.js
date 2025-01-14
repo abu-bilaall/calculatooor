@@ -42,3 +42,11 @@ function operate(operator, firstNum, secondNum) {
             alert("Incorrect operator");
     }
 }
+
+const display = document.querySelector('.display');
+const numbers = document.querySelectorAll('.numbers');
+const resetBtn = document.querySelector('.reset');
+
+resetBtn.addEventListener('click', () => {
+    display.textContent = '';
+})
